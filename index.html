@@ -20,7 +20,7 @@
         height: 70px;
         padding: 0 20px;
         /* box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.24); */
-        width: 100%;
+        /* width:100%; */
       }
       .navbar ul {
         display: flex;
@@ -97,7 +97,7 @@
         .edufun-logo {
           display: flex;
         }
-        .ham-nav {
+        .ham-navli {
           display: none;
         }
       }
@@ -105,7 +105,7 @@
         .hamburger {
           display: none;
         }
-        .ham-nav {
+        .ham-nav li{
           display: none;
         }
       }
@@ -113,29 +113,23 @@
         .hamburger {
           display: none;
         }
-        .ham-nav {
+        .ham-nav li{
           display: none;
         }
       }
       .ham-nav {
-        display:none;
+        display: none;
         flex-direction: column;
         background-color: antiquewhite;
-        width: 100% ;
-        margin:0px;
-        padding:0px;
-        position:absolute;
-        top:60px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        top: 60px;
       }
-      .navbar ul{
-         width:100%;
+      .show {
+        display: flex;
       }
-      .show
-      {
-         display:flex;
-         width:100% ;
-      }
-     
     </style>
   </head>
   <body>
@@ -172,7 +166,6 @@
     </nav>
     <script>
       function hamburgerMenu() {
-       
         const hamNav = document.getElementById("ham-nav");
         hamNav.classList.toggle("show");
       }
