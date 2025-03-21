@@ -39,7 +39,10 @@ function login() {
   console.log("User found:", userFind); // Debugging
   if (userFind) {
     alert("log in successfull");
+    window.location.href = "/index.html";
   } else {
     alert("log in failed");
   }
+  logInUSerName.value = "";
+  logInUserPassword.value = "";
 }
