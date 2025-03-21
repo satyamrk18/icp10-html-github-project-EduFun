@@ -22,6 +22,7 @@
             height:70px;
             padding: 0 20px;
             box-shadow:0 0 10px 5px rgba(0, 0, 0, 0.24);
+            width:100%;
         }
         .navbar ul{
             display:flex;
@@ -55,6 +56,72 @@
          {
             height:50px;
          }
+         
+        
+         @media (max-width:700px) {
+            .edufun-logo img
+            {
+                height:50px;
+            }
+            #logo-heading
+         {
+            height:40px;
+         }
+         .edufun-logo{
+            display:flex;
+         }
+         .navbar li
+         {
+            display:none;
+         }
+         .hamburger button{
+            display:block;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            border:2px solid gray;
+            border-radius:10px;
+         }
+         .hamburger img
+         {
+            height:35px;
+            width:35px;
+            margin-top:5px;
+         }
+         }
+         @media (min-width:701px) and (max-width:880px) {
+            .hamburger
+            {
+                display:none;
+            }
+            .edufun-logo img
+            {
+                height:40px;
+            }
+            #logo-heading
+         {
+            height:40px;
+         }
+         .navbar li  {
+                margin:7px;
+                
+         }
+         .edufun-logo{
+            display:flex;
+         }
+         }
+         @media (min-width:700px) and (max-width:1024px) {
+            .hamburger
+            {
+                display:none;
+            }
+         }
+         @media (min-width:1024px) {
+            .hamburger
+            {
+                display:none;
+            }
+         }
     </style>
 </head>
 <body>
@@ -70,6 +137,9 @@
             <li>contact</li>
             <li>Log In</li>
         </ul>
+        <div class="hamburger">
+            <button type="button" id="hamburger-btn"><img src="./icons/hamburger-menu.png"></button>
+        </div>
     </nav>
 </body>
 </html>
