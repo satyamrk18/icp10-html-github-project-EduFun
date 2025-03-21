@@ -27,34 +27,10 @@
         </button>
         <h4>
           Already have an account? &nbsp;
-          <a href="log_in_page.html">Log in</a>
+          <a href="./login.html">Log in</a>
         </h4>
       </form>
     </div>
-
-    <script>
-      let userInfo = JSON.parse(localStorage.getItem("userInfo")) || [];
-      function addData() {
-        let userNameInput = document.getElementById("sign-in-username");
-        let passWordInput = document.getElementById("sign-in-password");
-        let userName = userNameInput.value.trim();
-        let pass = passWordInput.value.trim();
-        if (userName === "" || pass === "") {
-          alert("plese enter a username or password");
-          return;
-        }
-
-        const userData = {
-          name: userName,
-          password: pass,
-        };
-        userInfo.push(userData);
-        localStorage.setItem("userInfo", JSON.stringify(userInfo));
-        console.log(userInfo);
-
-        userNameInput.value = "";
-        passWordInput.value = "";
-      }
-    </script>
+    <script src="./../js/login_and_signin.js"></script>
   </body>
 </html>
