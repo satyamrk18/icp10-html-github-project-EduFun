@@ -3,34 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log in</title>
+    <title>Sign in</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
-      <h1>Log In</h1>
+      <h1>Sign In</h1>
       <form>
         <input
           type="text"
-          id="log-in-username"
+          id="sign-in-username"
           placeholder="Username"
           required
         />
-        <span id="usernameError"></span>
         <input
           type="password"
-          id="log-in-password"
+          id="sign-in-password"
           placeholder="Password"
           required
         />
-        <span id="passwordError"></span>
-        <button type="button" id="login-btn" onsubmit="login()">
-          Log In
+        <button type="button" id="signin-btn" onclick="signin()">
+          Sign In
         </button>
         <h4>
-          you dont have an accoout ? plese
-          <a href="sign-in-page.html">sign in</a>
+          you have an account... ! &nbsp; plese
+          <a href="log_in_page.html">Log in</a>
         </h4>
       </form>
     </div>
