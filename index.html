@@ -19,8 +19,7 @@
         justify-content: space-between;
         height: 70px;
         padding: 0 20px;
-        /* box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.24); */
-        /* width:100%; */
+         box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.24); 
       }
       .navbar ul {
         display: flex;
@@ -66,6 +65,10 @@
         }
         .navbar li {
           display: none;
+        }
+        .navbar
+        {
+          box-shadow: none;
         }
         .hamburger button {
           display: block;
@@ -121,11 +124,13 @@
         display: none;
         flex-direction: column;
         background-color: antiquewhite;
+        border:none;
         width: 100%;
         margin: 0px;
         padding: 0px;
         position: absolute;
-        top: 60px;
+        box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.24);
+
       }
       .show {
         display: flex;
