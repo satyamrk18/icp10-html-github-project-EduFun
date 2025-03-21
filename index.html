@@ -1,145 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body{
-            margin:0;
-            padding:0;
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      * {
+        font-family: sans-serif;
+      }
+      .navbar {
+        background-color: antiquewhite;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        padding: 0 20px;
+        /* box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.24); */
+        width: 100%;
+      }
+      .navbar ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 10px;
+      }
+      .navbar li {
+        font-size: 20px;
+        margin: 20px;
+        list-style-type: none;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.71);
+        text-decoration: none;
+        cursor: pointer;
+        transition: underline 0.7s ease-in-out, color;
+      }
+      .navbar li:hover {
+        color: rgba(0, 26, 255, 0.829);
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 5px;
+      }
+      .edufun-logo {
+        margin-right: auto;
+      }
+      .edufun-logo img {
+        height: 70px;
+      }
+      #logo-heading {
+        height: 50px;
+      }
+
+      @media (max-width: 700px) {
+        .edufun-logo img {
+          height: 50px;
         }
-        *
-        {
-            font-family:sans-serif;
+        #logo-heading {
+          height: 40px;
         }
-        .navbar
-        {
-            background-color:antiquewhite;
-            display:flex;
-            align-items:center;
-            justify-content:space-between;
-            height:70px;
-            padding: 0 20px;
-            box-shadow:0 0 10px 5px rgba(0, 0, 0, 0.24);
-            width:100%;
+        .edufun-logo {
+          display: flex;
         }
-        .navbar ul{
-            display:flex;
-            flex-direction:row;
-            flex-wrap:wrap;
-            margin-right: 10px;
-         }
-         .navbar li{
-            font-size:20px;
-            margin:20px;
-            list-style-type:none;
-            font-weight:600;
-            color:rgba(0, 0, 0, 0.71);
-            text-decoration:none;
-            cursor:pointer;
-            transition:underline 0.7s ease-in-out,color;
-         }
-         .navbar li:hover{
-           color:rgba(0, 26, 255, 0.829);
-           text-decoration:underline;
-           text-decoration-thickness:3px;
-           text-underline-offset:5px;
-         }
-         .edufun-logo{
-            margin-right:auto;
-         }
-         .edufun-logo img{
-            height:70px;
-         }
-         #logo-heading
-         {
-            height:50px;
-         }
-         
-        
-         @media (max-width:700px) {
-            .edufun-logo img
-            {
-                height:50px;
-            }
-            #logo-heading
-         {
-            height:40px;
-         }
-         .edufun-logo{
-            display:flex;
-         }
-         .navbar li
-         {
-            display:none;
-         }
-         .hamburger button{
-            display:block;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            border:2px solid gray;
-            border-radius:10px;
-         }
-         .hamburger img
-         {
-            height:35px;
-            width:35px;
-            margin-top:5px;
-         }
-         }
-         @media (min-width:701px) and (max-width:880px) {
-            .hamburger
-            {
-                display:none;
-            }
-            .edufun-logo img
-            {
-                height:40px;
-            }
-            #logo-heading
-         {
-            height:40px;
-         }
-         .navbar li  {
-                margin:7px;
-                
-         }
-         .edufun-logo{
-            display:flex;
-         }
-         }
-         @media (min-width:700px) and (max-width:1024px) {
-            .hamburger
-            {
-                display:none;
-            }
-         }
-         @media (min-width:1024px) {
-            .hamburger
-            {
-                display:none;
-            }
-         }
+        .navbar li {
+          display: none;
+        }
+        .hamburger button {
+          display: block;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid gray;
+          border-radius: 10px;
+        }
+        .hamburger img {
+          height: 35px;
+          width: 35px;
+          margin-top: 5px;
+        }
+      }
+      @media (min-width: 701px) and (max-width: 880px) {
+        .hamburger {
+          display: none;
+        }
+        .edufun-logo img {
+          height: 40px;
+        }
+        #logo-heading {
+          height: 40px;
+        }
+        .navbar li {
+          margin: 7px;
+        }
+        .edufun-logo {
+          display: flex;
+        }
+        .ham-nav {
+          display: none;
+        }
+      }
+      @media (min-width: 700px) and (max-width: 1024px) {
+        .hamburger {
+          display: none;
+        }
+        .ham-nav {
+          display: none;
+        }
+      }
+      @media (min-width: 1024px) {
+        .hamburger {
+          display: none;
+        }
+        .ham-nav {
+          display: none;
+        }
+      }
+      .ham-nav {
+        display:none;
+        flex-direction: column;
+        background-color: antiquewhite;
+        width: 100% ;
+        margin:0px;
+        padding:0px;
+        position:absolute;
+        top:60px;
+      }
+      .navbar ul{
+         width:100%;
+      }
+      .show
+      {
+         display:flex;
+         width:100% ;
+      }
+     
     </style>
-</head>
-<body>
-    <nav class="navbar">
-        <div class="edufun-logo">
-            <img src="./icons/head-logo.png" alt="edufun-logo">
-            <img src="./icons/nav-heading.png" id="logo-heading" alt="logo-heading">
-        </div>
-        <ul>
-            <li>Home</li>
-            <li>Spaceship</li>
-            <li>About</li>
-            <li>contact</li>
-            <li>Log In</li>
-        </ul>
-        <div class="hamburger">
-            <button type="button" id="hamburger-btn"><img src="./icons/hamburger-menu.png"></button>
-        </div>
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="edufun-logo">
+        <img src="./icons/head-logo.png" alt="edufun-logo" />
+        <img
+          src="./icons/nav-heading.png"
+          id="logo-heading"
+          alt="logo-heading"
+        />
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>Spaceship</li>
+        <li>About</li>
+        <li>contact</li>
+        <li>Log In</li>
+      </ul>
+      <div class="hamburger">
+        <button type="button" id="hamburger-btn" onclick="hamburgerMenu()">
+          <img src="./icons/hamburger-menu.png" />
+        </button>
+      </div>
     </nav>
-</body>
+    <nav class="ham-nav" id="ham-nav">
+      <ul>
+        <li>Home</li>
+        <li>Spaceship</li>
+        <li>About</li>
+        <li>contact</li>
+        <li>Log In</li>
+      </ul>
+    </nav>
+    <script>
+      function hamburgerMenu() {
+       
+        const hamNav = document.getElementById("ham-nav");
+        hamNav.classList.toggle("show");
+      }
+    </script>
+  </body>
 </html>
