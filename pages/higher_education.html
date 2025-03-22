@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="./../css/higher_education.css" />
     <script src="./../js/script.js"></script>
     <style>
+        body{
+            background-color:#a7c7e722;
+        }
       .higher-edu-heading {
         margin-top: 70px;
-        background-color: red;
         text-align: center;
       }
       .box-container {
@@ -23,31 +25,35 @@
       }
       .box {
         height: 350px;
-        width:80%;
+        width: 80%;
         margin: 25px;
         border-radius: 15px;
+        border: 2px solid rgba(0, 0, 0, 0.336);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.075);
+        cursor: pointer;
+        transition: box-shadow 0.3s ease-out, tranform 0.3s;
+      }
+      .box:hover {
+        box-shadow: 0 0 10px 10px rgba(0, 26, 255, 0.409);
+        transform: scale(1.02);
+      }
+
+      .box-1 {
+        width: 25%;
+        height: 80%;
+      }
+      .box-1 img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+      }
+      .box-2 {
+        width: 60%;
         border: 2px solid black;
-        display:flex;
-        align-items:center;
-        justify-content:space-around;
-         
-      }
-      .box-1
-      {
-          width:25%;
-          height:80%;
-      }
-      .box-1 img{
-        height:100%;
-        width:100%; 
-        border-radius:10px;
-      }
-      .box-2
-      {
-          width:60%;
-          border:2px solid black;
-          height:80%;
-          
+        height: 80%;
       }
     </style>
   </head>
@@ -86,23 +92,23 @@
     <div class="higher-edu-heading"><h1>Higher Education</h1></div>
     <div class="box-container">
       <div class="box">
-        <div class="box-1"><img src="./../images/programming.jpg"></div>
+        <div class="box-1"><img src="./../images/programming.jpg" /></div>
         <div class="box-2"></div>
       </div>
       <div class="box">
-        <div class="box-1"><img src="./../images/finance.jpg"></div>
+        <div class="box-1"><img src="./../images/finance.jpg" /></div>
         <div class="box-2"></div>
       </div>
       <div class="box">
-        <div class="box-1"><img src="./../images/law.jpg"></div>
+        <div class="box-1"><img src="./../images/law.jpg" /></div>
         <div class="box-2"></div>
       </div>
       <div class="box">
-        <div class="box-1"><img src="./../images/civil-sevices.jpg"></div>
+        <div class="box-1"><img src="./../images/civil-sevices.jpg" /></div>
         <div class="box-2"></div>
       </div>
       <div class="box">
-        <div class="box-1"><img src="./../images/pharma.jpg"></div>
+        <div class="box-1"><img src="./../images/pharma.jpg" /></div>
         <div class="box-2"></div>
       </div>
     </div>
