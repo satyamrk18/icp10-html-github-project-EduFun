@@ -1,43 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Higher ducation</title>
-    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/higher_education.css" />
     <script src="./../js/script.js"></script>
-</head>
-<body>
+    <style>
+      .higher-edu-heading {
+        margin-top: 70px;
+        background-color: red;
+        text-align: center;
+      }
+      .box-container {
+        background-color: green;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .box {
+        height: 350px;
+        width:80%;
+        background-color: pink;
+        margin: 25px;
+        border-radius: 15px;
+        border: 2px solid black;
+        display:flex;
+        align-items:center;
+         justify-content:space-around;
+      }
+      .box-1
+      {
+          width:25%;
+          background-color:blue;
+          height:80%;
+         
+      }
+      .box-2
+      {
+          width:60%;
+          background-color:red;
+          height:80%;
+          
+      }
+    </style>
+  </head>
+  <body>
     <nav class="navbar" id="navbar">
-        <div class="edufun-logo">
-          <img src="./../icons/head-logo.png" alt="edufun-logo" />
-          <img
-            src="./../icons/nav-heading.png"
-            id="logo-heading"
-            alt="logo-heading"
-          />
-        </div>
-        <ul>
-          <li>Home</li>
-          <li>Spaceship</li>
-          <li>About</li>
-          <li>contact</li>
-          <li>Log In</li>
-        </ul>
-        <div class="hamburger">
-          <button type="button" id="hamburger-btn" onclick="hamburgerMenu()">
-            <img src="./../icons/hamburger-menu.png" />
-          </button>
-        </div>
-      </nav>
-      <nav class="ham-nav" id="ham-nav">
-        <ul>
-          <li>Home</li>
-          <li>Spaceship</li>
-          <li>About</li>
-          <li>contact</li>
-          <li>Log In</li>
-        </ul>
-      </nav>
-</body>
+      <div class="edufun-logo">
+        <img src="./../icons/head-logo.png" alt="edufun-logo" />
+        <img
+          src="./../icons/nav-heading.png"
+          id="logo-heading"
+          alt="logo-heading"
+        />
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>Spaceship</li>
+        <li>About</li>
+        <li>contact</li>
+        <li>Log In</li>
+      </ul>
+      <div class="hamburger">
+        <button type="button" id="hamburger-btn" onclick="hamburgerMenu()">
+          <img src="./../icons/hamburger-menu.png" />
+        </button>
+      </div>
+    </nav>
+    <nav class="ham-nav" id="ham-nav">
+      <ul>
+        <li>Home</li>
+        <li>Spaceship</li>
+        <li>About</li>
+        <li>contact</li>
+        <li>Log In</li>
+      </ul>
+    </nav>
+    <div class="higher-edu-heading"><h1>Higher Education</h1></div>
+    <div class="box-container">
+      <div class="box">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+      </div>
+      <div class="box">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+      </div>
+      <div class="box">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+      </div>
+      <div class="box">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+      </div>
+      <div class="box">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+      </div>
+    </div>
+  </body>
 </html>
