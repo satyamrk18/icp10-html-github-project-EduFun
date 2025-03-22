@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./../css/higher_education.css" />
     <script src="./../js/script.js"></script>
     <style>
-        body{
-            background-color:#a7c7e722;
-        }
+      body {
+        background-color: #a7c7e722;
+      }
       .higher-edu-heading {
         margin-top: 70px;
         text-align: center;
@@ -31,6 +31,7 @@
         border: 2px solid rgba(0, 0, 0, 0.336);
         display: flex;
         align-items: center;
+        position: relative;
         justify-content: space-around;
         box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.075);
         cursor: pointer;
@@ -52,8 +53,33 @@
       }
       .box-2 {
         width: 60%;
-        border: 2px solid black;
         height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .get-started {
+        color: white;
+        height:50px;
+        width:150px;
+        border: 2px double white;
+        outline: 2px solid #5733FF; /* Outer blue border */
+        border-radius:20px;
+        font-size:18px;
+        font-weight:400;
+        background-color: #5733FF;
+      }
+      
+      .higher-edu-btn {
+        display: flex;
+        justify-content: center;
+        gap:25px;
+        justify-content: space-around;
+        position: absolute;
+        width:250px;
+        align-items: center;
+        bottom:15px;
       }
     </style>
   </head>
@@ -93,23 +119,57 @@
     <div class="box-container">
       <div class="box">
         <div class="box-1"><img src="./../images/programming.jpg" /></div>
-        <div class="box-2"></div>
+        <div class="box-2">
+          <h2>IT Industri</h2>
+          <ul>
+            <h3>Topics</h3>
+            <li>Coding Questions</li>
+            <li>Opreting System</li>
+            <li>DataBase</li>
+            <li>Data Structure And Algorithm</li>
+            <li>Computer Network</li>
+          </ul>
+          <div class="higher-edu-btn">
+            <button class="get-started" type="button">Notes</button>
+            <button class="get-started" type="button">get-started</button>
+          </div>
+        </div>
       </div>
       <div class="box">
         <div class="box-1"><img src="./../images/finance.jpg" /></div>
-        <div class="box-2"></div>
+        <div class="box-2">
+          <div class="higher-edu-btn">
+            <button class="get-started" type="button">Notes</button>
+            <button class="get-started" type="button">get-started</button>
+          </div>
+        </div>
       </div>
       <div class="box">
         <div class="box-1"><img src="./../images/law.jpg" /></div>
-        <div class="box-2"></div>
+        <div class="box-2">
+          <div class="higher-edu-btn">
+            <button class="get-started" type="button">Notes</button>
+            <button class="get-started" type="button">get-started</button>
+          </div>
+        </div>
       </div>
       <div class="box">
         <div class="box-1"><img src="./../images/civil-sevices.jpg" /></div>
-        <div class="box-2"></div>
+        <div class="box-2">
+          <div class="higher-edu-btn">
+            <button class="get-started" type="button">Notes</button>
+            <button class="get-started" type="button">get-started</button>
+          </div>
+        </div>
       </div>
       <div class="box">
         <div class="box-1"><img src="./../images/pharma.jpg" /></div>
-        <div class="box-2"></div>
+        <div class="box-2">
+          <div class="higher-edu-btn">
+            <button class="get-started" type="button">Notes</button>
+            <button class="get-started" type="button">get-started</button>
+          </div>
+        </div>
       </div>
     </div>
   </body>
