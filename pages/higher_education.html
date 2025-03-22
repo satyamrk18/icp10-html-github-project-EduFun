@@ -52,12 +52,13 @@
         border-radius: 10px;
       }
       .box-2 {
-        width: 60%;
-        height: 80%;
+        width: 70%;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        position: relative;
       }
       .get-started {
         color: white;
@@ -72,9 +73,9 @@
         cursor: pointer;
         transition: background-color 0.3s ease-in-out;
       }
-      .get-started:hover{
-        background-color:#5833ff37;
-        color:black;
+      .get-started:hover {
+        background-color: #5833ff37;
+        color: black;
       }
       .higher-edu-btn {
         display: flex;
@@ -85,6 +86,28 @@
         width: 250px;
         align-items: center;
         bottom: 15px;
+      }
+      h2 {
+        position: absolute;
+        top: 10px;
+        font-size: 40px;
+      }
+      .box-2 ul {
+        position: absolute;
+        left: 30px;
+        font-size: 20px;
+      }
+      .box-2 li {
+        margin: 10px;
+        cursor: pointer;
+        transition: underline 0.7s ease-in-out, color;
+      }
+      .box-2 li:hover  {
+        color: rgba(0, 26, 255, 0.829);
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 5px;
+        font-weight:600;
       }
     </style>
   </head>
